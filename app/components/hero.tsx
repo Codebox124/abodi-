@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen py-12 lg:py-0 lg:h-[90vh] bg-[#b2b7c2]/10" id="home">
       <div className="mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pt-12 sm:pt-28 md:pt-32 lg:pt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pt-10 sm:pt-28 md:pt-32 lg:pt-0">
           {/* Text Content */}
           <div className="text-center lg:text-left z-10 order-2 lg:order-1">
             <motion.h1
