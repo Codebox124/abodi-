@@ -45,8 +45,15 @@ export default function Header() {
         <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4 '} fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}>
             <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
                 <div className='flex justify-between items-center px-4'>
+
                     <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
-                        <Image src={'/logo.png'} width={194} height={64} alt='logo' />
+                        <Image
+                            src={'/logo.png'}
+                            width={194}
+                            height={64}
+                            alt='logo'
+                            className="w-48 h-auto sm:w-32 md:w-40 lg:w-48"
+                        />
                     </Link>
 
                     <div onClick={() => { setNav(!nav) }}
@@ -65,9 +72,9 @@ export default function Header() {
                     <Link to='professions' activeClass='active' className='cursor-pointer' smooth={desktopMode} spy={true}>Showcase</Link>
                     <Link to='use-cases' activeClass='active' className='cursor-pointer' smooth={desktopMode} spy={true}>Usecase</Link>
                     <Link to='faq' activeClass='active' className='cursor-pointer' smooth={desktopMode} spy={true}>FAQ</Link>
-                    
 
-                   
+
+
                 </nav>
 
             </div>

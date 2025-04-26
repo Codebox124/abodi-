@@ -36,7 +36,7 @@ export function OurStorySection() {
               <div className="relative">
                 <div className="bg-indigo-600 rounded-lg w-full h-full absolute top-6 left-6 -z-10"></div>
                 <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <Image src="/images/team.jpg" width={500} height={300} alt="Abordi Team" className="rounded-lg w-full mb-8" />
+                  <Image src="/team.jpg" width={500} height={300} alt="Abordi Team" className="rounded-lg w-full mb-8" />
                   <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                   <p className="text-gray-700">
                     We're committed to bringing clarity to the AI landscape by providing professionals with exactly the tools they need—no more, no less. 

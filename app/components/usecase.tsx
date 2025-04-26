@@ -27,19 +27,19 @@ export function UseCasesSection() {
       {
         title: "Content Creation Workflow",
         description: "See how a content marketer uses Abordi to brainstorm, draft, edit, and optimize content all in one workspace.",
-        image: "/images/use-cases/content-creation.png",
+        image: "/content.jpg",
         profession: "Content Creator"
       },
       {
         title: "Recruiting Automation",
         description: "Discover how HR professionals streamline candidate communications and screening using Abordi's AI tools.",
-        image: "/images/use-cases/recruiting.png",
+        image: "/hr.jpg",
         profession: "HR / Recruiting"
       },
       {
         title: "Design Collaboration",
         description: "Learn how design teams use Abordi to generate mockups, get feedback, and iterate designs efficiently.",
-        image: "/images/use-cases/design.png",
+        image: "/design.jpg",
         profession: "Designer"
       }
     ]

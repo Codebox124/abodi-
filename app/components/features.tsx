@@ -1,7 +1,12 @@
 'use client'
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import { 
+  Search, 
+  LightbulbIcon, 
+  Layout, 
+  Smartphone 
+} from "lucide-react"
 
 // Shared animation variants for all sections
 const fadeIn = (direction: string, delay: number) => {
@@ -28,22 +33,22 @@ export function FeaturesSection() {
     {
       title: "AI Tool Curation",
       description: "Tools organized specifically for your profession, eliminating the search for what works best.",
-      icon: "/icons/curation-icon.svg",
+      icon: Search,
     },
     {
       title: "Smart Recommendations",
       description: "Our AI analyzes your needs and suggests the perfect tools for your specific tasks.",
-      icon: "/icons/recommendation-icon.svg",
+      icon: LightbulbIcon,
     },
     {
       title: "Unified Workspace",
       description: "Access all your AI tools in one place without switching between tabs or applications.",
-      icon: "/icons/workspace-icon.svg",
+      icon: Layout,
     },
     {
       title: "Cross-Platform",
       description: "Seamlessly work across mobile, tablet, and desktop with synchronized workflows.",
-      icon: "/icons/cross-platform-icon.svg",
+      icon: Smartphone,
     }
   ]
 
@@ -62,24 +67,27 @@ export function FeaturesSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              variants={fadeIn('up', 0.2 + index * 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{once: true, amount: 0.3}}
-              className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="bg-indigo-100 p-3 rounded-full mb-4">
-                  <Image src={feature.icon} width={40} height={40} alt={feature.title} />
+          {features.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <motion.div
+                key={feature.title}
+                variants={fadeIn('up', 0.2 + index * 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true, amount: 0.3}}
+                className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-indigo-100 p-3 rounded-full mb-4">
+                    <IconComponent size={40} className="text-indigo-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
