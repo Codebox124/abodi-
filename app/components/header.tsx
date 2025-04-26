@@ -42,17 +42,17 @@ export default function Header() {
         }
     })
     return (
-        <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4 '} fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}>
+        <header className={`${header ? 'bg-white shadow-md py-2' : ' shadow-none py-4 '} fixed bg-white w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}>
             <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
                 <div className='flex justify-between items-center px-4'>
 
                     <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
-                        <Image
+                        <img
                             src={'/logo.png'}
                             width={194}
                             height={64}
                             alt='logo'
-                            className="w-48 h-auto sm:w-32 md:w-40 lg:w-48"
+                            className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
                         />
                     </Link>
 
