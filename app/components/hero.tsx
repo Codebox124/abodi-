@@ -65,7 +65,7 @@ export default function Hero() {
               viewport={{ once: true, amount: 0.6 }}
               className="flex gap-x-4 justify-center lg:justify-start"
             >
-              <button className="transition-transform rounded-md bg-primary py-2 px-6 hover:scale-105 focus:outline-none">
+              <button className="transition-transform rounded-lg bg-primary py-3 px-6 hover:scale-105 focus:outline-none">
                 <Image
                   alt="Download on App Store"
                   width={132}
@@ -74,7 +74,7 @@ export default function Hero() {
                   className="h-auto w-32 sm:w-36"
                 />
               </button>
-              <button className="transition-transform rounded-md bg-primary py-2 px-6 hover:scale-105 focus:outline-none">
+              <button className="transition-transform rounded-lg bg-primary py-3 px-6 hover:scale-105 focus:outline-none">
                 <Image
                   alt="Get it on Google Play"
                   width={132}
